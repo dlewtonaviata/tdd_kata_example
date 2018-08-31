@@ -24,24 +24,32 @@ require('mocha');
 const expect = require('chai').expect;
 const convertToRoman = require('./roman').convertToRoman;
 
-describe("Decimal Digits to Roman Numerals", function () {
-  it('should covert the number one (1) into the roman numeral I', function () {
-    expect(convertToRoman(1)).to.equal("I");
+describe('Decimal Digits to Roman Numerals', function () {
+  describe('The initial examples to introduce the Priority Transformation Premise', function () {
+    it('should covert the number one (1) into the roman numeral I', function () {
+      expect(convertToRoman(1)).to.equal("I");
+    });
+  
+    it('should convert the number (5) to the roman numeral V', function () {
+      expect(convertToRoman(5)).to.equal("V");
+    });
+  
+    it('should convert the number (10) to the roman numeral X', function () {
+      expect(convertToRoman(10)).to.equal("X");
+    });
+  
+    it('should convert the number (50) to the roman numeral L', function () {
+      expect(convertToRoman(50)).to.equal("L");
+    });
+  
+    it('should convert the number (100) to the roman numeral C', function () {
+      expect(convertToRoman(100)).to.equal("C");
+    });
   });
 
-  it.skip('should convert the number (5) to the roman numeral V', function () {
-    expect(convertToRoman(5)).to.equal("V");
-  });
-
-  it.skip('should convert the number (10) to the roman numeral X', function () {
-    expect(convertToRoman(10)).to.equal("X");
-  });
-
-  it.skip('should convert the number (50) to the roman numeral L', function () {
-    expect(convertToRoman(50)).to.equal("L");
-  });
-
-  it.skip('should convert the number (100) to the roman numeral C', function () {
-    expect(convertToRoman(100)).to.equal("C");
+  describe('Pretending the map of simple values comes from a library', function () {
+    it('should convert the number (2) to the roman numeral II', function () {
+      expect(convertToRoman(2)).to.equal("II");
+    });
   });
 });
