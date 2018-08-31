@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_PATH=$NODE_PATH:$PWD/src mocha './src/**/*.spec.js'"
+    "test": "NODE_PATH=$NODE_PATH:$PWD/src mocha './src/**/*.spec.js'",
+    "test:watch": "NODE_PATH=$NODE_PATH:$PWD/src mocha --watch './src/**/*.spec.js'"
   },
   "author": "",
   "license": "MIT",
