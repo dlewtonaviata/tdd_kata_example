@@ -19,14 +19,21 @@
  *     Nintey       ( 90) written XC
  */
 
+// ****************************************************************************** //
+// *** Every test found below was written one at a time, before any code was. ***
+// ****************************************************************************** //
+
 require('mocha');
 
 const expect = require('chai').expect;
 const convertToRoman = require('./roman').convertToRoman;
 
 describe('Decimal Digits to Roman Numerals', function () {
+  // ********************************************************************************** //
+  // *** This set of tests represents writing a library for the single letter case. *** //
+  // ********************************************************************************** //
   describe('The initial examples to introduce the Priority Transformation Premise', function () {
-    it('should covert the number one (1) into the roman numeral I', function () {
+    it('should covert the number (1) into the roman numeral I', function () {
       expect(convertToRoman(1)).to.equal("I");
     });
   
@@ -47,9 +54,16 @@ describe('Decimal Digits to Roman Numerals', function () {
     });
   });
 
+  // ********************************************************************************** //
+  // *** This set of tests represents using a given library that cannot be changed. *** //
+  // ********************************************************************************** //
   describe('Pretending the map of simple values comes from a library', function () {
     it('should convert the number (2) to the roman numeral II', function () {
       expect(convertToRoman(2)).to.equal("II");
+    });
+
+    it('should convert the number (3) to the roman numeral III', function () {
+      expect(convertToRoman(3)).to.equal("III");
     });
   });
 });
