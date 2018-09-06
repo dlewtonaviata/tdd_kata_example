@@ -55,10 +55,14 @@ const convertToRoman = (number) => {
 // Not Tail-Recursion:  return "I" + convertToRoman(someNumber);
 // ****************************************************************************** //
 const convertToRoman = (number) => {
+  // ********************************************************************************** //
   // *** We'll pretend that we are given the map by a library and cannot change it. *** //
+  // ********************************************************************************** //
   const numeralMap = { '1': "I", '5': "V", '10': "X", '50': "L", '100': "C" };
 
+  // ********************************************************** //
   // *** The "real" start of our algorithm goes here, then. *** //
+  // ********************************************************** //
   if (Object.keys(numeralMap).includes('' + number)) {
     return numeralMap[number];
   }

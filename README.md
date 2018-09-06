@@ -1,5 +1,5 @@
 # Purpose
-This repositorywas used in a demo of Test-Driven Development (TDD). There were
+This repository was used in a demo of Test-Driven Development (TDD). There were
 a few core ideas presented in that demo, which the comments in this repository
 hopefully explain. The main few are written in the list below.
 

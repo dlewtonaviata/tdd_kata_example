@@ -9,7 +9,7 @@
  *   One Hundred  ( 100) is written C
  *
  * We also have two other important rules to deal with:
- *   1. There should never be more than three letters in a row.
+ *   1. There should never be more than three of the same letters in a row.
  *   2. There should never be more than one V or L in a row.
  *
  *   This means that for this exercise, we have the following special values that we must consider.
@@ -20,7 +20,7 @@
  */
 
 // ****************************************************************************** //
-// *** Every test found below was written one at a time, before any code was. ***
+// *** Every test found below was written one at a time, before any code was. *** //
 // ****************************************************************************** //
 
 require('mocha');
